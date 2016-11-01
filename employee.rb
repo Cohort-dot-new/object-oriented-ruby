@@ -18,19 +18,13 @@ puts "#{employee2[:first_name]} #{employee2[:last_name]} makes #{employee2[:sala
 
 # Instances of a class
 class Employee
+  attr_reader :first_name, :last_name
+
   def initialize(input_first_name, input_last_name, input_salary, input_status)
     @first_name = input_first_name
     @last_name = input_last_name
     @salary = input_salary
     @status = input_status
-  end
-
-  def first_name
-    @first_name
-  end
-
-  def last_name
-    @last_name
   end
 
   def print_info
