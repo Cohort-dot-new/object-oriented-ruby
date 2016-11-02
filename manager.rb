@@ -1,15 +1,6 @@
 class Employee
   attr_reader :first_name, :last_name
-
-  attr_reader :active
-  # def active
-  #   @active
-  # end
-
-  attr_writer :active
-  # def active=(input_status)
-  #   @active = input_status
-  # end
+  attr_accessor :active
 
   def initialize(input_options)
     @first_name = input_options[:first_name]
