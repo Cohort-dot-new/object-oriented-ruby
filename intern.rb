@@ -4,6 +4,12 @@ module EmailReportable
     # use email sending library...
     puts "Email sent!"
   end
+
+  def receive_report
+    puts "Receiving email..."
+    # write code
+    puts "Email received!"
+  end
 end
 
 class Employee
